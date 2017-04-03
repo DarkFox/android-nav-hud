@@ -1,0 +1,140 @@
+<html lang="da"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script src="jquery.min.js"></script>
+
+  <style type="text/css">
+    body {
+      background-color: black;
+      color: #49FF41;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      /* This is the bit that mirrors the display */
+      transform: rotate(180deg) scaleX(-1);
+      height:100vh;
+    }
+
+    div {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 54pt;
+      padding: 0;
+      margin: 0;
+    }
+
+    div.left {
+      float: left;
+    }
+    div.right {
+      float: right;
+    }
+    div.clear {
+      clear:both;
+    }
+
+    div.middle {
+      height: 320px;
+    }
+
+    div.bottom {
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+    }
+
+    div#clock {}
+    div#info {
+      color: yellow;
+    }
+    div#arrow {
+      margin-top: 30px;
+    }
+    div#instruction {
+      font-size: 50pt;
+      height: 320px;
+
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-all;
+      word-break: break-word;
+      hyphens: auto;
+
+      display: table-cell;
+      text-align: right;
+      vertical-align: middle;
+    }
+    div#distance {
+    }
+    div#eta {
+    }
+
+    img {
+      -webkit-filter: sepia() saturate(10000%) hue-rotate(48deg);
+    }
+  </style>
+
+  <script>
+  function updateClock () {
+   	var currentTime = new Date ( );
+  	var currentHours = currentTime.getHours ( );
+  	var currentMinutes = currentTime.getMinutes ( );
+  	var currentSeconds = currentTime.getSeconds ( );
+
+  	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+
+  	var currentTimeString = currentHours + ':' + currentMinutes;
+
+   	$("#clock").html(currentTimeString);
+  }
+
+  function updateScreen() {
+    $.getJSON("data.json", function(json){
+      $('#info').text();
+      writeScreen(json);
+    }).fail(function() {
+      $('#info').text('NoConn');
+    });
+  }
+
+  function writeScreen(data) {
+    $('#eta').text(data.etaclock+'>');
+    $('#distance').text(data.distance);
+    $('#instruction').text(data.instruction);
+    if (data.updateimg == "1") {
+      $('#arrowimg').attr('src', 'arrow.png');
+    }
+  }
+
+  $(document).ready(function()
+  {
+    $.ajaxSetup({ cache: false });
+    setInterval('updateScreen()', 1000);
+    setInterval('updateClock()', 1000);
+  });
+  </script>
+
+  <title>HUD</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="top">
+      <div class="left" id="clock">--:--</div>
+      <div class="right" id="info"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="middle">
+      <div class="left" id="arrow"><img id="arrowimg" src="arrow.png" height="250" width="250"></div>
+      <div id="instruction">No route</div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottom">
+      <div class="left" id="distance"></div>
+      <div class="right" id="eta">&gt;</div>
+    </div>
+
+  </div>
+
+</body></html>

@@ -1,0 +1,484 @@
+<TaskerData sr="" dvi="1" tv="4.9u4m">
+	<Profile sr="prof17" ve="2">
+		<cdate>1491044099213</cdate>
+		<clp>true</clp>
+		<edate>1491252945996</edate>
+		<id>17</id>
+		<mid0>22</mid0>
+		<mid1>24</mid1>
+		<State sr="con0" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TETHER</lhs>
+					<op>2</op>
+					<rhs>wifi</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+		<State sr="con1" ve="2">
+			<code>3</code>
+			<Str sr="arg0" ve="3">HB01</Str>
+			<Str sr="arg1" ve="3"/>
+		</State>
+	</Profile>
+	<Profile sr="prof30" ve="2">
+		<cdate>1490914368930</cdate>
+		<cldm>10</cldm>
+		<edate>1491253042613</edate>
+		<id>30</id>
+		<mid0>47</mid0>
+		<nme>Navigation FWD</nme>
+		<Event sr="con0" ve="2">
+			<code>1520257414</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<AllFields>true</AllFields>
+					<AllFields-type>java.lang.Boolean</AllFields-type>
+					<App>Maps</App>
+					<App-type>java.lang.String</App-type>
+					<BigImageNames>arrowimg</BigImageNames>
+					<BigImageNames-type>java.lang.String</BigImageNames-type>
+					<BigTextNames>distance,instruction,eta</BigTextNames>
+					<BigTextNames-type>java.lang.String</BigTextNames-type>
+					<CaseinsensitiveApp>false</CaseinsensitiveApp>
+					<CaseinsensitiveApp-type>java.lang.Boolean</CaseinsensitiveApp-type>
+					<CaseinsensitivePackage>false</CaseinsensitivePackage>
+					<CaseinsensitivePackage-type>java.lang.Boolean</CaseinsensitivePackage-type>
+					<CaseinsensitiveText>false</CaseinsensitiveText>
+					<CaseinsensitiveText-type>java.lang.Boolean</CaseinsensitiveText-type>
+					<CaseinsensitiveTitle>false</CaseinsensitiveTitle>
+					<CaseinsensitiveTitle-type>java.lang.Boolean</CaseinsensitiveTitle-type>
+					<ExactApp>false</ExactApp>
+					<ExactApp-type>java.lang.Boolean</ExactApp-type>
+					<ExactPackage>false</ExactPackage>
+					<ExactPackage-type>java.lang.Boolean</ExactPackage-type>
+					<ExactText>false</ExactText>
+					<ExactText-type>java.lang.Boolean</ExactText-type>
+					<ExactTitle>false</ExactTitle>
+					<ExactTitle-type>java.lang.Boolean</ExactTitle-type>
+					<HasReplyAction>false</HasReplyAction>
+					<HasReplyAction-type>java.lang.Boolean</HasReplyAction-type>
+					<Id>1</Id>
+					<Id-type>java.lang.String</Id-type>
+					<ImageNames>&lt;null&gt;</ImageNames>
+					<ImageNames-type>java.lang.String</ImageNames-type>
+					<InterceptApps>&lt;StringArray sr=""/&gt;</InterceptApps>
+					<InterceptApps-type>[Ljava.lang.String;</InterceptApps-type>
+					<InterceptPersistent>&lt;null&gt;</InterceptPersistent>
+					<InterceptPersistent-type>java.lang.String</InterceptPersistent-type>
+					<InvertApp>false</InvertApp>
+					<InvertApp-type>java.lang.Boolean</InvertApp-type>
+					<InvertPackage>false</InvertPackage>
+					<InvertPackage-type>java.lang.Boolean</InvertPackage-type>
+					<InvertText>false</InvertText>
+					<InvertText-type>java.lang.Boolean</InvertText-type>
+					<InvertTitle>false</InvertTitle>
+					<InvertTitle-type>java.lang.Boolean</InvertTitle-type>
+					<PackageName>&lt;null&gt;</PackageName>
+					<PackageName-type>java.lang.String</PackageName-type>
+					<RegexApp>false</RegexApp>
+					<RegexApp-type>java.lang.Boolean</RegexApp-type>
+					<RegexPackage>false</RegexPackage>
+					<RegexPackage-type>java.lang.Boolean</RegexPackage-type>
+					<RegexText>false</RegexText>
+					<RegexText-type>java.lang.Boolean</RegexText-type>
+					<RegexTitle>false</RegexTitle>
+					<RegexTitle-type>java.lang.Boolean</RegexTitle-type>
+					<Text>&lt;null&gt;</Text>
+					<Text-type>java.lang.String</Text-type>
+					<TextNames>diststreet,desteta</TextNames>
+					<TextNames-type>java.lang.String</TextNames-type>
+					<Title>&lt;null&gt;</Title>
+					<Title-type>java.lang.String</Title-type>
+					<Type>0</Type>
+					<Type-type>java.lang.String</Type-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Event Behaviour: true
+Notification Type: Only Created Notifications
+Notification Id: 1
+Notification App: Maps
+Get All Fields : true
+Text Names : diststreet,desteta
+Big Text Names : distance,instruction,eta
+Big Image Names : arrowimg</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Id App Type TextNames BigTextNames BigImageNames plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>a0fc230e-9922-4623-99c3-2995595d51d9</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autonotification.intent.IntentInterceptNotificationEvent</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autonotification</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autonotification.activity.ActivityConfigNotificationInterceptTaskerEvent</Str>
+		</Event>
+		<State sr="con1" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%CARHUD</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1491253070763</cdate>
+		<name>HUD</name>
+		<pids>30,17</pids>
+		<tids>6,47,22,24</tids>
+	</Project>
+	<Task sr="task22">
+		<cdate>1491044104008</cdate>
+		<edate>1491252945996</edate>
+		<id>22</id>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%CARHUD</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>694838943</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>ON</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<de.fun2code.android.pawserver.plugin.locale.STATE>true</de.fun2code.android.pawserver.plugin.locale.STATE>
+					<de.fun2code.android.pawserver.plugin.locale.STATE-type>java.lang.Boolean</de.fun2code.android.pawserver.plugin.locale.STATE-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">de.fun2code.android.pawserver</Str>
+			<Str sr="arg2" ve="3">de.fun2code.android.pawserver.plugin.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task24">
+		<cdate>1491044146535</cdate>
+		<edate>1491252189538</edate>
+		<id>24</id>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%CARHUD</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>694838943</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>OFF</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<de.fun2code.android.pawserver.plugin.locale.STATE>false</de.fun2code.android.pawserver.plugin.locale.STATE>
+					<de.fun2code.android.pawserver.plugin.locale.STATE-type>java.lang.Boolean</de.fun2code.android.pawserver.plugin.locale.STATE-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">de.fun2code.android.pawserver</Str>
+			<Str sr="arg2" ve="3">de.fun2code.android.pawserver.plugin.locale.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task47">
+		<cdate>1490914392067</cdate>
+		<edate>1491253042613</edate>
+		<id>47</id>
+		<nme>Nav Forwarder</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>File folder, without trailing /</label>
+			<Str sr="arg0" ve="3">%path</Str>
+			<Str sr="arg1" ve="3">paw/html</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%eta</lhs>
+					<op>2</op>
+					<rhs>Exit navigation</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%updateimg</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%newfilesize</lhs>
+					<op>1</op>
+					<rhs>%oldfilesize</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%updateimg</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%newfilesize</lhs>
+					<op>0</op>
+					<rhs>%oldfilesize</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%eta</Str>
+			<Str sr="arg1" ve="3">·</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%etatime</Str>
+			<Str sr="arg1" ve="3">%eta1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%etadist</Str>
+			<Str sr="arg1" ve="3">%eta2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%etaclock</Str>
+			<Str sr="arg1" ve="3">%eta3</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>598</code>
+			<Str sr="arg0" ve="3">%etaclock</Str>
+			<Str sr="arg1" ve="3"> ETA</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>1099157652</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<DeletePaths>&lt;null&gt;</DeletePaths>
+					<DeletePaths-type>java.lang.String</DeletePaths-type>
+					<DeleteValues>&lt;null&gt;</DeleteValues>
+					<DeleteValues-type>java.lang.String</DeleteValues-type>
+					<FilterField>&lt;null&gt;</FilterField>
+					<FilterField-type>java.lang.String</FilterField-type>
+					<FilterValye>&lt;null&gt;</FilterValye>
+					<FilterValye-type>java.lang.String</FilterValye-type>
+					<JsonAddToArrayKey>&lt;null&gt;</JsonAddToArrayKey>
+					<JsonAddToArrayKey-type>java.lang.String</JsonAddToArrayKey-type>
+					<JsonAddToArrayValues>&lt;null&gt;</JsonAddToArrayValues>
+					<JsonAddToArrayValues-type>java.lang.String</JsonAddToArrayValues-type>
+					<JsonArrayClear>false</JsonArrayClear>
+					<JsonArrayClear-type>java.lang.Boolean</JsonArrayClear-type>
+					<JsonArrayObjectKeys>&lt;null&gt;</JsonArrayObjectKeys>
+					<JsonArrayObjectKeys-type>java.lang.String</JsonArrayObjectKeys-type>
+					<JsonArrayObjectValues>&lt;null&gt;</JsonArrayObjectValues>
+					<JsonArrayObjectValues-type>java.lang.String</JsonArrayObjectValues-type>
+					<JsonArrayObjectValuesSeparator>|</JsonArrayObjectValuesSeparator>
+					<JsonArrayObjectValuesSeparator-type>java.lang.String</JsonArrayObjectValuesSeparator-type>
+					<JsonInput>&lt;null&gt;</JsonInput>
+					<JsonInput-type>java.lang.String</JsonInput-type>
+					<JsonKeys>distance,etaclock,etadist,etatime,instruction,updateimg</JsonKeys>
+					<JsonKeys-type>java.lang.String</JsonKeys-type>
+					<JsonResultPretty>false</JsonResultPretty>
+					<JsonResultPretty-type>java.lang.Boolean</JsonResultPretty-type>
+					<JsonResultVariable>navdata</JsonResultVariable>
+					<JsonResultVariable-type>java.lang.String</JsonResultVariable-type>
+					<JsonValues>%distance,%etaclock,%etadist,%etatime,%instruction,%updateimg</JsonValues>
+					<JsonValues-type>java.lang.String</JsonValues-type>
+					<MatchesCaseInsensitive>false</MatchesCaseInsensitive>
+					<MatchesCaseInsensitive-type>java.lang.Boolean</MatchesCaseInsensitive-type>
+					<MatchesCaseInsensitive_delete>false</MatchesCaseInsensitive_delete>
+					<MatchesCaseInsensitive_delete-type>java.lang.Boolean</MatchesCaseInsensitive_delete-type>
+					<MatchesContainsAll>false</MatchesContainsAll>
+					<MatchesContainsAll-type>java.lang.Boolean</MatchesContainsAll-type>
+					<MatchesContainsAll_delete>false</MatchesContainsAll_delete>
+					<MatchesContainsAll_delete-type>java.lang.Boolean</MatchesContainsAll_delete-type>
+					<MatchesExact>false</MatchesExact>
+					<MatchesExact-type>java.lang.Boolean</MatchesExact-type>
+					<MatchesExact_delete>false</MatchesExact_delete>
+					<MatchesExact_delete-type>java.lang.Boolean</MatchesExact_delete-type>
+					<MatchesRegex>false</MatchesRegex>
+					<MatchesRegex-type>java.lang.Boolean</MatchesRegex-type>
+					<MatchesRegex_delete>false</MatchesRegex_delete>
+					<MatchesRegex_delete-type>java.lang.Boolean</MatchesRegex_delete-type>
+					<Separator>,</Separator>
+					<Separator-type>java.lang.String</Separator-type>
+					<UpdatePaths>&lt;null&gt;</UpdatePaths>
+					<UpdatePaths-type>java.lang.String</UpdatePaths-type>
+					<UpdateValues>&lt;null&gt;</UpdateValues>
+					<UpdateValues-type>java.lang.String</UpdateValues-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Separator: ,
+Json Keys: distance,etaclock,etadist,etatime,instruction,updateimg
+Json Values: %distance,%etaclock,%etadist,%etatime,%instruction,%updateimg
+Arrays Separator: |</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%navdata
+Result Json
+Resulting Json that was written&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>JsonKeys JsonValues JsonResultVariable Separator JsonArrayObjectValuesSeparator plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>3c62ecc1-26a2-44c3-9427-7c1bab14076c</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentJsonWrite</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigJsonWrite</Str>
+			<Int sr="arg3" val="60"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>548</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%navdata</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">%path/data.json</Str>
+			<Str sr="arg1" ve="3">%navdata</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%eta</Str>
+			<Str sr="arg1" ve="3">%instruction</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%instruction</Str>
+			<Str sr="arg1" ve="3">%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%distance</Str>
+			<Str sr="arg1" ve="3">  </Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>342</code>
+			<se>false</se>
+			<Int sr="arg0" val="3"/>
+			<Str sr="arg1" ve="3">%path/arrow.png</Str>
+			<Str sr="arg2" ve="3">%oldfilesize</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>188</code>
+			<Img sr="arg0" ve="2">
+				<var>%arrowimg</var>
+			</Img>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>187</code>
+			<Str sr="arg0" ve="3">%path/arrow.png</Str>
+			<Int sr="arg1" val="85"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="3"/>
+			<Str sr="arg1" ve="3">%path/arrow.png</Str>
+			<Str sr="arg2" ve="3">%newfilesize</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1491250318497</cdate>
+		<edate>1491253099574</edate>
+		<id>6</id>
+		<nme>Start HUD</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1165325195</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Source: http://localhost:8080/hud.html</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"webscreenAdvanced":{},"webscreenFullscreen":false,"webscreenHtmlInject":{"webscreenHtmlToInject":"","webscreenInsertId":"","webscreenReturnHtmlInjection":false},"webscreenSource":"http://localhost:8080/hud.html"}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>de35e159-8dd8-481c-aa01-494cad973d2b</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autotools.intent.IntentWebScreen</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autotools</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autotools.activity.ActivityConfigWebScreen</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
