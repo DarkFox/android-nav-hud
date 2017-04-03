@@ -7,10 +7,10 @@ _(Here used in combination with Sygic Speed Cameras)_
 
 ## Requirements
  - Android device(s)
- - Tasker
- - AutoNotification
- - AutoTools
- - PAW Server
+ - [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
+ - [AutoNotification](https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification)
+ - [AutoTools](https://play.google.com/store/apps/details?id=com.joaomgcd.autotools)
+ - [PAW Server](https://play.google.com/store/apps/details?id=de.fun2code.android.pawserver)
 
 ## Setup
 
