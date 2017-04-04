@@ -103,7 +103,7 @@
     $('#distance').text(data.distance);
     $('#instruction').text(data.instruction);
     if (data.updateimg == "1") {
-      $('#arrowimg').attr('src', 'arrow.png');
+      $('#arrowimg').attr('src', 'arrow.png' + "?t=" + Math.random());
     }
   }
 
