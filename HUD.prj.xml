@@ -26,7 +26,7 @@
 	<Profile sr="prof30" ve="2">
 		<cdate>1490914368930</cdate>
 		<cldm>1</cldm>
-		<edate>1491301785041</edate>
+		<edate>1491302149514</edate>
 		<id>30</id>
 		<mid0>47</mid0>
 		<nme>Navigation Update</nme>
@@ -134,7 +134,7 @@ Big Image Names : arrowimg</com.twofortyfouram.locale.intent.extra.BLURB>
 		<cdate>1491253070763</cdate>
 		<name>HUD</name>
 		<pids>17,30</pids>
-		<tids>47,22,24,6</tids>
+		<tids>6,22,47,24</tids>
 	</Project>
 	<Task sr="task22">
 		<cdate>1491044104008</cdate>
@@ -198,7 +198,7 @@ Big Image Names : arrowimg</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task47">
 		<cdate>1490914392067</cdate>
-		<edate>1491301785041</edate>
+		<edate>1491302149514</edate>
 		<id>47</id>
 		<nme>Nav Forwarder</nme>
 		<pri>6</pri>
@@ -360,14 +360,13 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>548</code>
 			<on>false</on>
 			<Str sr="arg0" ve="3">%navdata</Str>
-			<Int sr="arg1" val="1"/>
+			<Int sr="arg1" val="0"/>
 		</Action>
 		<Action sr="act19" ve="7">
-			<code>410</code>
+			<code>415</code>
 			<Str sr="arg0" ve="3">%path/data.json</Str>
-			<Str sr="arg1" ve="3">%navdata</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
+			<Str sr="arg1" ve="3">1</Str>
+			<Str sr="arg2" ve="3">%oldfile</Str>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>547</code>
@@ -378,6 +377,20 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act20" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">%path/data.json</Str>
+			<Str sr="arg1" ve="3">%navdata</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%oldfile</lhs>
+					<op>1</op>
+					<rhs>%navdata</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act21" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%OLDINSTRUCTION</Str>
 			<Str sr="arg1" ve="3">%instruction</Str>
