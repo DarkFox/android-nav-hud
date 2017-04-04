@@ -2,7 +2,7 @@
 	<Profile sr="prof17" ve="2">
 		<cdate>1491044099213</cdate>
 		<clp>true</clp>
-		<edate>1491254060977</edate>
+		<edate>1491301362065</edate>
 		<id>17</id>
 		<mid0>22</mid0>
 		<mid1>24</mid1>
@@ -26,7 +26,7 @@
 	<Profile sr="prof30" ve="2">
 		<cdate>1490914368930</cdate>
 		<cldm>1</cldm>
-		<edate>1491257115182</edate>
+		<edate>1491301785041</edate>
 		<id>30</id>
 		<mid0>47</mid0>
 		<nme>Navigation Update</nme>
@@ -133,12 +133,12 @@ Big Image Names : arrowimg</com.twofortyfouram.locale.intent.extra.BLURB>
 	<Project sr="proj0" ve="2">
 		<cdate>1491253070763</cdate>
 		<name>HUD</name>
-		<pids>30,17</pids>
-		<tids>6,47,24,22</tids>
+		<pids>17,30</pids>
+		<tids>47,22,24,6</tids>
 	</Project>
 	<Task sr="task22">
 		<cdate>1491044104008</cdate>
-		<edate>1491253123473</edate>
+		<edate>1491301362065</edate>
 		<id>22</id>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
@@ -198,7 +198,7 @@ Big Image Names : arrowimg</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task47">
 		<cdate>1490914392067</cdate>
-		<edate>1491257115182</edate>
+		<edate>1491301785041</edate>
 		<id>47</id>
 		<nme>Nav Forwarder</nme>
 		<pri>6</pri>
@@ -228,28 +228,9 @@ Big Image Names : arrowimg</com.twofortyfouram.locale.intent.extra.BLURB>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%newfilesize</lhs>
-					<op>1</op>
-					<rhs>%oldfilesize</rhs>
-				</Condition>
-			</ConditionList>
 		</Action>
 		<Action sr="act11" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%updateimg</Str>
-			<Str sr="arg1" ve="3">0</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%newfilesize</lhs>
-					<op>0</op>
-					<rhs>%oldfilesize</rhs>
-				</Condition>
-			</ConditionList>
+			<code>38</code>
 		</Action>
 		<Action sr="act12" ve="7">
 			<code>590</code>
@@ -396,6 +377,14 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
+		<Action sr="act20" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%OLDINSTRUCTION</Str>
+			<Str sr="arg1" ve="3">%instruction</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
 		<Action sr="act3" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%instruction</Str>
@@ -416,14 +405,24 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<code>38</code>
 		</Action>
 		<Action sr="act6" ve="7">
-			<code>342</code>
-			<se>false</se>
-			<Int sr="arg0" val="3"/>
-			<Str sr="arg1" ve="3">%path/arrow.png</Str>
-			<Str sr="arg2" ve="3">%oldfilesize</Str>
+			<code>547</code>
+			<Str sr="arg0" ve="3">%updateimg</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%instruction</lhs>
+					<op>1</op>
+					<rhs>%OLDINSTRUCTION</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
 			<code>188</code>
 			<Img sr="arg0" ve="2">
 				<var>%arrowimg</var>
@@ -431,18 +430,11 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act9" ve="7">
 			<code>187</code>
 			<Str sr="arg0" ve="3">%path/arrow.png</Str>
 			<Int sr="arg1" val="85"/>
 			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>342</code>
-			<Int sr="arg0" val="3"/>
-			<Str sr="arg1" ve="3">%path/arrow.png</Str>
-			<Str sr="arg2" ve="3">%newfilesize</Str>
-			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task6">
