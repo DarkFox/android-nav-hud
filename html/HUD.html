@@ -76,57 +76,71 @@
   </style>
 
   <script>
-  function updateClock () {
-   	var currentTime = new Date ( );
-  	var currentHours = currentTime.getHours ( );
-  	var currentMinutes = currentTime.getMinutes ( );
-  	var currentSeconds = currentTime.getSeconds ( );
+    $(document).ready(function() {
+      $.ajaxSetup({ cache: false });
 
-  	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+      const clock = $("#clock");
+      const info = $('#info')
+      const eta = $('#eta');
+      const distance = $('#distance');
+      const instruction = $('#instruction');
+      const arrowimg = $('#arrowimg');
 
-  	var currentTimeString = currentHours + ':' + currentMinutes;
+      var clockTimer;
+      var screenTimer;
+      var etaTimer;
 
-   	$("#clock").html(currentTimeString);
-  }
+      var imgTimestamp = '';
+      var etaVars = ['etaclock', 'etadist', 'etatime'];
+      var currentEtaVar = 0;
 
-  function updateScreen() {
-    $.getJSON("data.json", function(json){
-      $('#info').text();
-      writeScreen(json);
-    }).fail(function() {
-      $('#info').text('NoConn');
+      updateScreen();
+      updateClock();
+      cycleEta();
+
+      function updateClock () {
+       	var currentTime = new Date ( );
+      	var currentHours = currentTime.getHours ( );
+      	var currentMinutes = currentTime.getMinutes ( );
+      	var currentSeconds = currentTime.getSeconds ( );
+
+      	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+
+      	var currentTimeString = currentHours + ':' + currentMinutes + ' ' + currentSeconds;
+
+       	clock.html(currentTimeString);
+        clockTimer = setTimeout(updateClock, 1000);
+      }
+
+      function updateScreen() {
+        $.getJSON("data.json", function(json){
+          info.text();
+          writeScreen(json);
+        }).fail(function() {
+          info.text('NoConn');
+        }).always(function() {
+          screenTimer = setTimeout(updateScreen, 1000);
+        });
+      }
+
+      function cycleEta() {
+        currentEtaVar++;
+        if (currentEtaVar >= etaVars.length) {
+          currentEtaVar = 0;
+        }
+        etaTimer = setTimeout(updateEta, 1000);
+      }
+
+      function writeScreen(data) {
+        eta.text(eval('data.'+etaVars[currentEtaVar])+'>');
+        distance.text(data.distance);
+        instruction.text(data.instruction);
+        if (data.updateimg != imgTimestamp) {
+          imgTimestamp = data.updateimg;
+          arrowimg.attr('src', 'arrow.png' + "?t=" + imgTimestamp);
+        }
+      }
     });
-  }
-
-  var etaVars = ['etaclock', 'etadist', 'etatime'];
-  var currentEtaVar = 0;
-
-  function cycleEta() {
-    currentEtaVar++;
-    if (currentEtaVar >= etaVars.length) {
-      currentEtaVar = 0;
-    }
-  }
-
-  var imgTimestamp = '';
-  
-  function writeScreen(data) {
-    $('#eta').text(eval('data.'+etaVars[currentEtaVar])+'>');
-    $('#distance').text(data.distance);
-    $('#instruction').text(data.instruction);
-    if (data.updateimg != imgTimestamp) {
-      imgTimestamp = data.updateimg;
-      $('#arrowimg').attr('src', 'arrow.png' + "?t=" + imgTimestamp);
-    }
-  }
-
-  $(document).ready(function()
-  {
-    $.ajaxSetup({ cache: false });
-    setInterval('updateScreen()', 1000);
-    setInterval('updateClock()', 1000);
-    setInterval('cycleEta()', 10000);
-  });
   </script>
 
   <title>HUD</title>
