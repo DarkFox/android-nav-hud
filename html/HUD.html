@@ -102,11 +102,11 @@
        	var currentTime = new Date ( );
       	var currentHours = currentTime.getHours ( );
       	var currentMinutes = currentTime.getMinutes ( );
-      	var currentSeconds = currentTime.getSeconds ( );
+      	//var currentSeconds = currentTime.getSeconds ( );
 
       	currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
 
-      	var currentTimeString = currentHours + ':' + currentMinutes + ' ' + currentSeconds;
+      	var currentTimeString = currentHours + ':' + currentMinutes;
 
        	clock.html(currentTimeString);
         clockTimer = setTimeout(updateClock, 1000);
