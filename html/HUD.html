@@ -98,12 +98,15 @@
     });
   }
 
+  var imgTimestamp = '';
+  
   function writeScreen(data) {
     $('#eta').text(data.etaclock+'>');
     $('#distance').text(data.distance);
     $('#instruction').text(data.instruction);
-    if (data.updateimg == "1") {
-      $('#arrowimg').attr('src', 'arrow.png' + "?t=" + Math.random());
+    if (data.updateimg != imgTimestamp) {
+      imgTimestamp = data.updateimg;
+      $('#arrowimg').attr('src', 'arrow.png' + "?t=" + imgTimestamp);
     }
   }
 
