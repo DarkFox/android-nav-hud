@@ -114,7 +114,7 @@
 
       function updateScreen() {
         $.getJSON("data.json", function(json){
-          info.text();
+          info.text('');
           writeScreen(json);
         }).fail(function() {
           info.text('NoConn');
